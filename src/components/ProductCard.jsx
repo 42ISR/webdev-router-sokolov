@@ -1,11 +1,11 @@
 import { labelForCategory } from '../data/products.js';
 
-export default function ProductCard({ product, onSelect }) {
+export default function ProductCard({ product}) {
   return (
     <a
       href={'/catalog/' + product.id}
       className="product-card"
-      onClick={e => { e.preventDefault(); onSelect(product.id); }}
+      // onClick={e => { e.preventDefault(); onSelect(product.id); }}
     >
       <div className="product-swatch" style={{ background: product.color }}>
         {product.name[0]}
