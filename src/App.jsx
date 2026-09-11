@@ -104,6 +104,7 @@ const App =() => {
         <Route path="about" index element={<AboutPage />} />
         <Route path="catalog/:id" element={<ProductPage />} />
         <Route path="search" element={<SearchPage/>} />
+        <Route path="*" element={<NotFoundPage/>} />
       </Route>
     </Routes>
   );
